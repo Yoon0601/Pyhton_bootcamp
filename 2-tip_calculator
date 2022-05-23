@@ -12,8 +12,6 @@ total_bill = input("What was the total bill? $")
 tip = input("How much tip would you like to give? 10, 12, or 15? ")
 people = input("How many people to split the bill? ")
 tip_cal = (int(tip)/100)+1
-print(tip_cal)
 pay = (float(total_bill) / int(people)) * tip_cal
 r_pay=round(pay,3)
-print(f"Each person should pay : {r_pay}")
-
+print(f"Each person should pay : ${r_pay}")
